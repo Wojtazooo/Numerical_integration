@@ -154,22 +154,16 @@ ylabel('y')
 legend('kwadratura trapezow','wykres funkcji f(x)')
 title('kwadratura trapezów')
 
-% oblicznie wartosci calki dla simpsona
-przyb_calka_simps = kw_simpsona(a,b,funkcja,N);
-
 % Obluga bledow i wypisanie wartosci funkcji
 bl_bez_prostokatow = (abs(przyb_calka_prost - dokladna_wart))/dokladna_wart;
 bl_bez_trapezow = (abs(przyb_calka_trap - dokladna_wart))/dokladna_wart;
-bl_bez_simps = (abs(przyb_calka_simps - dokladna_wart))/dokladna_wart;
 
 % uzueplnienie wszystkich okienek
 set(handles.wart_bl_prost, 'String', bl_bez_prostokatow*100 + "%")
 set(handles.wart_bl_trap, 'String', bl_bez_trapezow*100 + "%")
-set(handles.wart_bl_simps, 'String', bl_bez_simps*100 +  "%")
 set(handles.wart_cal_prost, 'String', przyb_calka_prost)
 set(handles.wart_cal_trap, 'String', przyb_calka_trap)
-set(handles.wart_cal_simp, 'String', przyb_calka_simps)
-set(handles.liczba_operacji, 'String', 8)
+
 
 
 
