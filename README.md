@@ -33,7 +33,7 @@ x.^2 | -3 | 3 | 18
 sin(x) | 0 | pi | 2 
 x | 0 | 2 | 2 
 1./(x.^2) | 1 | 3 | 2/3 
-sqrt(x) | 0 | 4 | 5 
+sqrt(x) | 0 | 4 | 16/3 
  
 ![GitHub Logo](/screenshots/example1.png)
  
