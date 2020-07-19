@@ -5,13 +5,25 @@
 
 ![GitHub Logo](/screenshots/blankGUI.png)
 
-
-**Input values**
+## Input values
   * a - beginning of integraition interval
   * b - end of integration interval
   * f(x) - intergral function (a function should be in readable format for Matlab for example if we want to input f(x) = x^2 we should input it as x.^2 due to the fact x is a vector)
   * real value of integral - value of integral of f(x) at interval <a,b>
   * number of subintervals - for how many interval <a,b> should be divided in numerical integraion 
+  
+## Output
+  * Midpoint rule plot
+     * f(x) plot
+     * visualization of Midpoint rule
+     * computed value of integral with Midpoint rule
+     * relative error of Midpoint rule 
+  * Trtapezoidal rule plot
+     * f(x) plot
+     * visualization of Trapezoidal rule
+     * computed value of integral with Trapezoidal rule
+     * relative error of Trapozoidal rule 
+  
 
 ## Examples
 
